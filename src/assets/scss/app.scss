@@ -1,0 +1,34 @@
+/*----------------------------------------------------------------------
+
+        MASTER STYLESHEET
+
+        Project:        GeeksMotion Webpack Boilerplate
+        Version:        Alpha 0.0.5
+        Author:         GeeksMotion
+        Primary use:    Corporate, Business Themes.
+        Email:                  geeksmotiongroup@gmail.com
+        Follow:                 http://www.twitter.com/geeksmotion
+        Like:                   http://www.facebook.com/geeksmotion
+        Website:                http://www.geeksmotion.com
+
+-----------------------------------------------------------------------*/
+@import 'config/variables',
+        'addons/bootstrap-sass/assets/stylesheets/bootstrap',
+        '../../../node_modules/font-awesome/css/font-awesome.css',
+        'config/core',
+        '../fonts/SFPro-font',
+        'modules/buttons',
+        'modules/text-theme',
+        'modules/bg-theme',
+        'modules/spacing',
+        'pages/home',
+        'layout/header',
+        'layout/footer',
+        'layout/sidebar',
+        'global/typography',
+        'global/base',
+        'global/mixins',
+        'global/responsive';
+
+
+

@@ -1,0 +1,346 @@
+/*--------------------------------------
+	[HELPERS]
+--------------------------------------*/
+.text-center{
+  text-align: center!important;
+}
+.text-right{
+  text-align: right!important;
+}
+.text-left{
+  text-align: left!important;
+}
+/*--------------------------------------
+	[WELL & CARD]
+--------------------------------------*/
+
+.well,
+.card{
+  border-radius: 5px;
+  background: #fff;
+  -moz-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+/*--------------------------------------
+	[NAVBAR]
+  --------------------------------------*/
+.navbar{
+  &.navbar-default{
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+    .navbar-brand > img {
+      display: block;
+      max-height: 30px;
+      margin-top: -5px;
+    }
+
+    .nav.navbar-nav{
+      >li{
+        >a{
+          color: $dark-theme;
+          font-weight: 600;
+          transition: all ease-in-out .1s;
+          border-bottom: 2px solid transparent;
+        }
+
+        &.active,
+        &:hover,
+        &:focus{
+          >a{
+            background-color: transparent;
+            border-bottom: 2px solid $theme;
+          }
+        }
+        > .dropdown-menu{
+          border-radius: 10px;
+          border: 1px solid transparent;
+        }
+      }
+    }
+
+  }
+}
+
+/*--------------------------------------
+	[FORM INPUTS]
+--------------------------------------*/
+.form-control{
+    color: $dark-theme;
+    padding: 15px;
+    height: auto;
+    font-weight: 400;
+    border: 1px solid rgba(204, 204, 204, 0.5);
+    border-color:rgba(204, 204, 204, 0.5);
+    &:focus {
+      border-color: $theme;
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba($theme, 0.6);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba($theme, 0.6);
+    }
+
+  }
+
+  input:disabled{
+    color: $gray-theme;
+    background: #F1F2F4;
+    box-shadow: none;
+  }
+  
+  textarea.form-control{
+    padding: 15px;
+  }
+  
+  .form-group{
+  
+    .help-block{
+      font-size: 80% !important;
+      margin-top: 0;
+      border-radius: 3px;
+      padding: 0 5px;
+      box-shadow: 0 3px 7px 0px rgba(0, 0, 0, 0.21);
+    }
+  
+    label,
+    .form-label{
+      opacity: .7;
+      font-weight: normal;
+    }
+  
+    &.has-success{
+      label{
+        color: $success-theme;
+      }
+      .help-block{
+        color: $success-theme;
+      }
+      .input-group-addon{
+        border-top: 1px solid $success-theme;
+        border-bottom: 1px solid $success-theme;
+        border-right: 1px solid $success-theme;
+        .fa{
+          color: $success-theme;
+          &:before{
+            content: "\F058";
+          }
+        }
+      }
+      .form-control{
+        border-top: 1px solid $success-theme;
+        border-bottom: 1px solid $success-theme;
+        border-left: 1px solid $success-theme;
+        border-right: 1px solid $success-theme;
+      }
+    }
+    &.has-error{
+      label{
+        color: $danger-theme;
+      }
+      .help-block{
+        color: $danger-theme;
+      }
+      .input-group-addon{
+        border-top: 1px solid $danger-theme;
+        border-bottom: 1px solid $danger-theme;
+        border-right: 1px solid $danger-theme;
+        .fa{
+          color: $danger-theme;
+          &:before{
+            content: "\F058";
+          }
+        }
+      }
+      .form-control{
+        border-top: 1px solid $danger-theme;
+        border-bottom: 1px solid $danger-theme;
+        border-left: 1px solid $danger-theme;
+        border-right: 1px solid $danger-theme;
+      }
+    }
+    &.has-warning{
+      label{
+        color: $warning-theme;
+      }
+      .help-block{
+        color: $warning-theme;
+      }
+      .input-group-addon{
+        border-top: 1px solid $warning-theme;
+        border-bottom: 1px solid $warning-theme;
+        border-right: 1px solid $warning-theme;
+        .fa{
+          color: $warning-theme;
+          &:before{
+            content: "\F058";
+          }
+        }
+      }
+      .form-control{
+        border-top: 1px solid $warning-theme;
+        border-bottom: 1px solid $warning-theme;
+        border-left: 1px solid $warning-theme;
+        border-right: 1px solid $warning-theme;
+      }
+    }
+  }
+  
+  .input-group{
+    .form-control{
+      border-right: none;
+      border-right: none!important;
+    }
+    .input-group-addon{
+      color: #555555;
+      text-align: center;
+      background-color: #fff;
+      border-top: 1px solid rgba(#ccc,.5);
+      border-bottom: 1px solid rgba(#ccc,.5);
+      border-right: 1px solid rgba(#ccc,.5);
+      border-left: none;
+      .fa{
+        color: $light-theme;
+      }
+    }
+  }
+
+
+/*--------------------------------------
+[SHADOWS]
+--------------------------------------*/
+.ui-shadow {
+  &-1{
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.2);
+  }
+  &-2{
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+  }
+
+  &-3{
+    -moz-box-shadow: 0 10px 20px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+  }
+
+  &-4{
+    -moz-box-shadow: 0 14px 28px rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 14px 28px rgba(0,0,0,.15);
+    box-shadow: 0 14px 28px rgba(0,0,0,.15);
+  }
+  &-5{
+    -moz-box-shadow: 0 19px 38px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 19px 38px rgba(0,0,0,.2);
+    box-shadow: 0 19px 38px rgba(0,0,0,.2);
+  }
+}
+
+/*--------------------------------------
+[ALERTS]
+--------------------------------------*/
+
+.alert{
+  
+  button.close {
+    opacity: 1;
+    text-shadow: none;
+  }
+
+  &-success{
+    color:#fff;
+    background: $success-theme;
+    border: 1px solid $success-theme;
+    button.close {
+      color:#fff;
+    }
+    &.alert-light{
+      color:$success-theme;
+      background: lighten($success-theme,50%);
+      border: 1px solid lighten($success-theme,50%);
+      button.close {
+        color:$success-theme;
+      }
+    }
+  }
+  &-warning{
+    color:$dark-theme;
+    background: $warning-theme;
+    border: 1px solid $warning-theme;
+    button.close {
+      color:$dark-theme;
+    }
+    &.alert-light{
+      color:darken($warning-theme,10%);
+      background: lighten($warning-theme,45%);
+      border: 1px solid lighten($warning-theme,45%);
+      button.close {
+        color:darken($warning-theme,10%);
+      }
+    }
+  }
+  &-info{
+    color:#fff;
+    background: $info-theme;
+    border: 1px solid $info-theme;
+    button.close {
+      color:#fff;
+    }
+    &.alert-light{
+      color:$info-theme;
+      background: lighten($info-theme,35%);
+      border: 1px solid lighten($info-theme,35%);
+      button.close {
+        color:$info-theme;
+      }
+    }
+  }
+  &-danger{
+    color:#fff;
+    background: $danger-theme;
+    border: 1px solid $danger-theme;
+    button.close {
+      color:#fff;
+    }
+    &.alert-light{
+      color:$danger-theme;
+      background: lighten($danger-theme,35%);
+      border: 1px solid lighten($danger-theme,35%);
+      button.close {
+        color:$danger-theme;
+      }
+    }
+  }
+}
+
+/*--------------------------------------
+[MODALS]
+--------------------------------------*/
+
+.modal{
+
+  button.close{
+    color: $dark-theme;
+    opacity: 1;
+  }
+  .modal-header{
+    border-bottom: none;
+    color: $dark-theme;
+  }
+  .modal-footer{
+    border-top: none;
+  }
+  .modal-content{
+    padding: 12px;
+    border:none;
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  }
+
+}
+

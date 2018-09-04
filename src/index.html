@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8" />
+	<!-- <link rel="apple-touch-icon" sizes="76x76" href="">
+	<link rel="icon" type="image/png" href=""> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>GeeksMotion Webpack Boilerplate</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta name="description" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="" />
+	<meta property="og:image:height" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:site" content="" />
+	<link href="./assets/css/app.css?v=00.1" rel="stylesheet">
+</head>
+
+<body>
+
+	<div id="demo">
+
+		<section id="typography">
+			<div class="container">
+				<h1><span class="text-theme">1.</span> Typography</h1>
+				<div class="row mt-40">
+					<div class="col-sm-6">
+						<ul class="list-inline">
+							<li style="font-weight:100">Light</li>
+							<li style="font-weight:normal">Regular</li>
+							<li style="font-weight:600">Semibold</li>
+							<li style="font-weight:bold">Bold</li>
+						</ul>
+						<br>
+						<h3>Heading</h3>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis similique modi nam quae aperiam? Hic, mollitia,
+							adipisci minus autem odio sit quae quo alias itaque qui in accusamus accusantium esse.</p>
+					</div>
+					<div class="col-sm-6">
+						<p>Text colors</p>
+						<ul class="list-unstyled">
+							<li>
+								<div class="box-color bg-primary"></div>
+								<strong>Blue</strong> (Class: .text-primary)
+							</li>
+							<li>
+								<div class="box-color bg-success"></div>
+								<strong>Green</strong> (Class: .text-success)
+							</li>
+							<li>
+								<div class="box-color bg-warning"></div>
+								<strong>Yellow</strong> (Class: .text-warning)
+							</li>
+							<li>
+								<div class="box-color bg-info"></div>
+								<strong>Light blue</strong> (Class: .text-info)
+							</li>
+							<li>
+								<div class="box-color bg-danger"></div>
+								<strong>Red</strong> (Class: .text-danger)
+							</li>
+							<li>
+								<div class="box-color bg-dark"></div>
+								<strong>Dark</strong> (Class: .text-dark)
+							</li>
+							<li>
+								<div class="box-color bg-gray"></div>
+								<strong>Gray</strong> (Class: .text-gray)
+							</li>
+							<li>
+								<div class="box-color bg-light"></div>
+								<strong>Light</strong> (Class: .text-l ight)
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="colors" class="mt-40">
+			<div class="container">
+				<h1><span class="text-theme">2.</span> Colors</h1>
+				<div class="row">
+					<div class="col-sm-12">
+
+						<div class="color-item">
+							<div class="figure bg-primary"></div>
+							<div class="caption">.bg-primary</div>
+						</div>
+
+						<div class="color-item">
+							<div class="figure bg-success"></div>
+							<div class="caption">.bg-success</div>
+						</div>
+
+						<div class="color-item">
+							<div class="figure bg-warning"></div>
+							<div class="caption">bg-warning</div>
+						</div>
+
+						<div class="color-item">
+							<div class="figure bg-info"></div>
+							<div class="caption">.bg-info</div>
+						</div>
+
+						<div class="color-item">
+							<div class="figure bg-danger"></div>
+							<div class="caption">.bg-danger</div>
+						</div>
+
+
+						<div class="color-item">
+							<div class="figure bg-theme"></div>
+							<div class="caption">.bg-theme</div>
+						</div>
+
+						<div class="color-item">
+							<div class="figure bg-theme02"></div>
+							<div class="caption">.bg-theme02</div>
+						</div>
+
+						<div class="color-item">
+							<div class="figure bg-theme03"></div>
+							<div class="caption">.bg-theme03</div>
+						</div>
+
+						<div class="color-item">
+							<div class="figure bg-theme04"></div>
+							<div class="caption">.bg-theme04</div>
+						</div>
+
+						<div class="color-item">
+							<div class="figure bg-theme05"></div>
+							<div class="caption">.bg-theme05</div>
+						</div>
+
+						<div class="color-item">
+							<div class="figure bg-dark"></div>
+							<div class="caption">.bg-dark</div>
+						</div>
+
+						<div class="color-item">
+							<div class="figure bg-light"></div>
+							<div class="caption">.bg-light</div>
+						</div>
+
+						<div class="color-item">
+							<div class="figure bg-gray"></div>
+							<div class="caption">.bg-gray</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="forms" class="mt-40">
+			<div class="container">
+				<h1><span class="text-theme">3.</span> Form Elements</h1>
+				<div class="row">
+					<div class="col-sm-4">
+
+						<div class="form-group">
+							<div class="input-group">
+								<input type="text" class="form-control" value="Input">
+								<span class="input-group-addon"><i class="fa fa-user text-primary"></i></span>
+							</div>
+						</div>
+
+						<div class="form-group has-success">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+								<span class="input-group-addon" id="basic-addon2"><i class="fa fa-user"></i></span>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<input type="text" class="form-control" value="Input disabled" disabled>
+						</div>
+
+
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+						</div>
+
+						<div class="form-group">
+							<label class="form-label">Input label</label>
+							<div class="input-group">
+								<input type="password" class="form-control" value="password">
+								<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="basic-url" class="form-label">Your vanity URL</label>
+							<div class="input-group">
+								<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+								<span class="input-group-addon bg-primary text-white" id="basic-addon3">https://example.com/users/</span>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-sm-4">
+						<div class="form-group has-success">
+							<label class="control-label" for="">Input with warning</label>
+							<input type="text" class="form-control" id="" aria-describedby="helpBlock2">
+						</div>
+
+						<div class="form-group has-error">
+							<label class="control-label" for="">Input with warning</label>
+							<input type="text" class="form-control" id="" aria-describedby="helpBlock2">
+							<span id="helpBlock2" class="help-block"><i class="fa fa-exclamation-triangle"></i> Error message</span>
+						</div>
+
+						<div class="form-group has-warning">
+							<label class="control-label" for="">Input with warning</label>
+							<input type="text" class="form-control" id="" aria-describedby="helpBlock2">
+							<span id="helpBlock2" class="help-block"><i class="fa fa-info-circle"></i> warning message</span>
+						</div>
+					</div>
+
+
+					<div class="col-sm-4">
+						<div class="form-group">
+							<label class="form-label">Input label</label>
+							<textarea class="form-control" cols="30" rows="4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quibusdam incidunt eos autem ipsa quia quis a atque quas aliquid quae consequatur animi alias soluta, pariatur rerum, odit perferendis id?</textarea>
+						</div>
+
+
+						<div class="form-group has-success">
+							<label class="form-label">Input label</label>
+							<textarea class="form-control" cols="30" rows="4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quibusdam incidunt eos autem ipsa quia quis a atque quas aliquid quae consequatur animi alias soluta, pariatur rerum, odit perferendis id?</textarea>
+							<span id="helpBlock2" class="help-block"><i class="fa fa-check-circle"></i> Success message</span>
+						</div>
+
+						<div class="form-group">
+							<label for="" class="form-label">Select</label>
+							<select name="" id="" class="form-control">
+								<option value="">Option #1</option>
+								<option value="">Option #2</option>
+								<option value="">Option #3</option>
+							</select>
+						</div>
+
+					</div>
+
+					<div class="clearfix"></div>
+
+					<div class="col-sm-6">
+						<form action="" class="well form-example text-center">
+							<h3>Login into your account</h3>
+							<p>Don't have an account? <a href="#!">Create new</a></p>
+							<div class="fields">
+								<div class="form-group">
+									<div class="input-group">
+										<input type="email" class="form-control" placeholder="Your email">
+										<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="input-group">
+										<input type="password" class="form-control" placeholder="Your password">
+										<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+									</div>
+								</div>
+								 <button class="btn btn-primary btn-lg round" type="button">Login</button>
+								 <a href="#!" style="display:block" class="mt-10">Forget password?</a>
+							</div>
+						</form>
+					</div>
+
+					<div class="col-sm-6">
+						<form action="" class="well form-example">
+							<div class="fields">
+								<div class="form-group">
+									<span class="form-label">Full name</span>
+									<input type="text" class="form-control">
+								</div>
+								<div class="form-group has-error">
+									<span class="form-label">Country</span>
+									<select  class="form-control">
+										<option value="">Chile</option>
+										<option value="">Perú</option>
+										<option value="">Venezuela</option>
+									</select>
+									<span id="helpBlock2" class="help-block"><i class="fa fa-exclamation-triangle"></i> Field required</span>
+								</div>
+								<div class="form-group">
+									<span class="form-label">Enter full address</span>
+									<input type="text" class="form-control" placeholder="Address">
+								</div>
+								<button class="btn btn-block btn-theme02 btn-lg round" type="button">Submit</button>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section id="buttons" class="mt-40">
+			<div class="container">
+				<h1><span class="text-theme">4.</span> Buttons</h1>
+				<div class="row">
+
+					<div class="col-sm-12">
+						<div style="display:block;margin-bottom: 10px;">
+							<button class="btn btn-primary">Primary button</button>
+							<button class="btn btn-primary round">Primary round button</button>
+							<button class="btn btn-primary border">Primary border button</button>
+						</div>
+						<div style="display:block;margin-bottom: 10px;">
+							<button class="btn btn-success">Success button</button>
+							<button class="btn btn-success round">Success round button</button>
+							<button class="btn btn-success border">Success border button</button>
+						</div>
+						<div style="display:block;margin-bottom: 10px;">
+							<button class="btn btn-warning">Warning button</button>
+							<button class="btn btn-warning round">Warning round button</button>
+							<button class="btn btn-warning border">Warning border button</button>
+						</div>
+						<div style="display:block;margin-bottom: 10px;">
+							<button class="btn btn-info">Info button</button>
+							<button class="btn btn-info round">Info round button</button>
+							<button class="btn btn-info border">Info border button</button>
+						</div>
+						<div style="display:block;margin-bottom: 10px;">
+							<button class="btn btn-danger">Danger button</button>
+							<button class="btn btn-danger round">Danger round button</button>
+							<button class="btn btn-danger border">Danger border button</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="shadow" class="mt-40">
+			<div class="container">
+				<h1><span class="text-theme">5.</span> Shadows</h1>
+				<p><strong>Use class:</strong> ".ui-shadow". </p>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="box ui-shadow-1">
+							.ui-shadow-1
+						</div>
+						<div class="box ui-shadow-2">
+							.ui-shadow-2
+						</div>
+						<div class="box ui-shadow-3">
+							.ui-shadow-3
+						</div>
+						<div class="box ui-shadow-4">
+							.ui-shadow-4
+						</div>
+						<div class="box ui-shadow-5">
+							.ui-shadow-5
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="alerts" class="mt-40">
+			<div class="container">
+				<h1><span class="text-theme">6.</span> Alerts</h1>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="alert alert-success">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+							.alert-success
+						</div>
+
+						<div class="alert alert-warning">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+							.alert-warning
+						</div>
+
+						<div class="alert alert-info">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+							.alert-info
+						</div>
+
+						<div class="alert alert-danger">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+							.alert-danger
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="alert alert-success alert-light">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+							.alert-success.alert-light
+						</div>
+
+						<div class="alert alert-warning alert-light">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+							.alert-warning.alert-light
+						</div>
+
+						<div class="alert alert-info alert-light">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+							.alert-info.alert-light
+						</div>
+
+						<div class="alert alert-danger alert-light">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+							.alert-danger.alert-light
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="modals" class="mt-40">
+			<div class="container">
+				<h1><span class="text-theme">7.</span> Modals</h1>
+				<div class="row">
+					<div class="col-sm-6">
+
+						<div class="modal" role="dialog" style="display:block;position: relative" tabindex="-1">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title text-center" id="myModalLabel">
+											<i class="fa fa-check text-success fa-2x text-center"></i>
+										</h4>
+									</div>
+									<div class="modal-body text-center">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod libero corporis ipsam accusamus animi.
+									</div>
+									<div class="modal-footer text-center">
+										<button type="button" class="btn btn-default round" data-dismiss="modal">Skip</button>
+										<button type="button" class="btn btn-success round">Take tour</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-sm-6">
+
+						<div class="modal" role="dialog" style="display:block;position: relative" tabindex="-1">
+							<div class="modal-dialog modal-md" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myModalLabel"><i class="fa fa-warning text-warning"></i> Modal heading</h4>
+									</div>
+									<div class="modal-body">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod libero corporis ipsam accusamus animi.
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-warning">Action</button>
+										<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="clearfix"></div>
+
+					<div class="col-sm-6">
+
+						<div class="modal" role="dialog" style="display:block;position: relative" tabindex="-1">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myModalLabel"></h4>
+									</div>
+									<div class="modal-body text-center">
+										<strong>Are you sure you want to perform this action?</strong>
+									</div>
+									<div class="modal-footer text-center">
+										<button type="button" class="btn btn-lg btn-danger">Action</button>
+										<button type="button" class="btn btn-lg btn-default" data-dismiss="modal">Cancel</button>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-sm-6">
+
+						<div class="modal" role="dialog" style="display:block;position: relative" tabindex="-1">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myModalLabel">Modal heading</h4>
+									</div>
+									<div class="modal-body">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod libero corporis ipsam accusamus animi.
+									</div>
+									<div class="modal-footer text-left">
+										<button type="button" class="btn btn-lg btn-primary">Action</button>
+										<button type="button" class="btn btn-lg btn-default" data-dismiss="modal">Cancel</button>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<section id="navbar" class="mt-40">
+			<div class="container">
+				<h1><span class="text-theme">8.</span> Navbar</h1>
+				<div class="row">
+					<div class="col-sm-12">
+
+
+						<nav class="navbar navbar-default">
+							<div class="container">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+									 aria-controls="navbar">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+									<a class="navbar-brand hide" href="#">Project name</a>
+								</div>
+								<div id="navbar" class="navbar-collapse collapse">
+									<ul class="nav navbar-nav">
+										<li class="active"><a href="#">Home</a></li>
+										<li><a href="#about">About</a></li>
+										<li><a href="#contact">Contact</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+												<span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li><a href="#">Action</a></li>
+												<li><a href="#">Another action</a></li>
+												<li><a href="#">Something else here</a></li>
+												<li role="separator" class="divider"></li>
+												<li class="dropdown-header">Nav header</li>
+												<li><a href="#">Separated link</a></li>
+												<li><a href="#">One more separated link</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!--/.nav-collapse -->
+							</div>
+						</nav>
+
+						<div class="clearfix"></div>
+
+						<p class="mb-10 mt-20">Navbar with logo</p>
+
+						<nav class="navbar navbar-default">
+							<div class="container">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+									 aria-controls="navbar">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+									<a class="navbar-brand" href="#">
+										<img src="./assets/img/logo.png" alt="">
+									</a>
+								</div>
+								<div id="navbar" class="navbar-collapse collapse">
+									<ul class="nav navbar-nav hide">
+										<li class="active"><a href="#">Home</a></li>
+										<li><a href="#about">About</a></li>
+										<li><a href="#contact">Contact</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+												<span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li><a href="#">Action</a></li>
+												<li><a href="#">Another action</a></li>
+												<li><a href="#">Something else here</a></li>
+												<li role="separator" class="divider"></li>
+												<li class="dropdown-header">Nav header</li>
+												<li><a href="#">Separated link</a></li>
+												<li><a href="#">One more separated link</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!--/.nav-collapse -->
+							</div>
+						</nav>
+
+
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+
+	</div>
+	<script type="text/javascript" src="./assets/js/app.bundle.js"></script>
+</body>
+
+</html>
