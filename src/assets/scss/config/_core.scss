@@ -28,6 +28,7 @@
   --------------------------------------*/
 .navbar{
   &.navbar-default{
+    border-radius: 0;
     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19);
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -40,17 +41,19 @@
 
     .nav.navbar-nav{
       >li{
+        transition: all ease-in-out .1s;
         >a{
-          color: $dark-theme;
+          color: $gray-theme;
           font-weight: 600;
-          transition: all ease-in-out .1s;
           border-bottom: 2px solid transparent;
+          transition: all ease-in-out .1s;
         }
 
         &.active,
         &:hover,
         &:focus{
           >a{
+            color: $dark-theme;
             background-color: transparent;
             border-bottom: 2px solid $theme;
           }
@@ -58,6 +61,18 @@
         > .dropdown-menu{
           border-radius: 10px;
           border: 1px solid transparent;
+          > li {
+
+            > a {
+              color: $gray-theme;
+              transition: all ease-in-out .1s;
+              &:hover,
+              &:focus{
+                color: $dark-theme;
+              }
+            }
+
+          }
         }
       }
     }
@@ -344,3 +359,82 @@
 
 }
 
+/*--------------------------------------
+[MEDIA LIST]
+--------------------------------------*/
+.media-list{
+  margin-bottom: 0;
+  border-radius: 5px;
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  .media{
+    margin-top: 0;
+    padding: 10px;
+    transition: all ease-in-out .1s;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.3);
+    img.media-object{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+      border-bottom: none;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    &:first-child{
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    .media-body{
+      .media-heading{
+        color: $dark-theme;
+      }
+      span{
+        color: $gray-theme;
+      }
+
+      &.media-middle{
+        vertical-align: middle;
+        .media-heading{
+          color: $gray-theme;
+          font-weight: 400;
+        }
+      }
+
+    }
+
+    a.media-action,
+    button.media-action{
+      float: right;
+      background: transparent;
+      border: none;
+      color: $gray-theme;
+      width: 18px;
+      height: 18px;
+      padding: 0;
+      font-size: 14px;
+      border-radius: 2px;
+      transition: all ease-in-out .1s;
+      &:hover,
+      &:focus{
+        color: $dark-theme;
+      }
+    }
+
+    &:hover,
+    &:focus{
+      -moz-box-shadow: 0 3px 6px rgba(0,0,0,.16);
+      -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.16);
+      box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    }
+  }
+}
