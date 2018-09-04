@@ -28,7 +28,9 @@ $warning-theme: #FFB700;
 $danger-theme: #FF1D31;
 $info-theme: #2196F3;
 
-//Colors manipulation
+/*--------------------------------------
+[COLOR MANIPULATION]
+--------------------------------------*/
 $theme-lighten: lighten($theme, $percent-value);
 $theme-darken: darken($theme, $percent-value);
 $theme02-lighten: lighten($theme02,$percent-value);

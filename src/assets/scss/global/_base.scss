@@ -34,8 +34,6 @@ section {
     padding-bottom: 200px;
     .title{
       color: #022047;
-    }
-    h1{
       margin-bottom: 50px;
     }
     .box-color{
@@ -67,6 +65,9 @@ section {
         height: 70px;
         border: 5px solid #eee;
         border-radius: 100%;
+      }
+      .caption{
+        font-size: 12px;
       }
     }
 

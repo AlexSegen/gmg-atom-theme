@@ -65,6 +65,7 @@
 
             > a {
               color: $gray-theme;
+              padding: 8px 20px;
               transition: all ease-in-out .1s;
               &:hover,
               &:focus{
@@ -85,7 +86,7 @@
 --------------------------------------*/
 .form-control{
     color: $dark-theme;
-    padding: 15px;
+    padding: 10px;
     height: auto;
     font-weight: 400;
     border: 1px solid rgba(204, 204, 204, 0.5);
